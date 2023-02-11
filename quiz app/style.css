@@ -73,6 +73,7 @@ body {
     background-color: rgb(99, 193, 255);
     padding: 35px;
     display: none;
+    border-radius: 10px;
 }
 .result h1, span{
 color: rgb(253, 253, 253);
