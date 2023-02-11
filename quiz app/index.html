@@ -13,42 +13,42 @@
     <div class="container">
         <div id="main1" class="main">
             <h2 id="ques"> What does HTML stand for?</h2>
-            <ul>
-                <span><input id="op1" class="opt correct" type="radio" name="opt"> Hyper Text Markup Language</span><br>
-                <span><input id="op2" class="opt wrong" type="radio" name="opt"> Hot Mail</span><br>
-                <span><input id="op3" class="opt wrong" type="radio" name="opt"> How to Make Lasagna</span><br>
-                <span><input id="op4" class="opt wrong" type="radio" name="opt"> None of these</span><br>
+                <span><input id="op1" onclick="correct++;" class="opt correct" type="radio" name="opt"> Hyper Text Markup Language</span><br>
+                <span><input id="op2 wrong" onclick="wrong++;" class="opt" type="radio" name="opt"> Hot Mail</span><br>
+                <span><input id="op3 wrong" onclick="wrong++;" class="opt" type="radio" name="opt"> How to Make Lasagna</span><br>
+                <span><input id="op4 wrong" onclick="wrong++;" class="opt" type="radio" name="opt"> None of these</span><br>
                 <input class="submit" id="Submit1" onclick="submitone()" type="submit" value="Submit">
-            </ul>
         </div>
         <div id="main2" class="main">
             <h2 id="ques"> 
                 How many tags are in a regular element?</h2>
             <ul>
-                <span><input id="op1" class="opt wrong" type="radio" name="opt"> 1</span><br>
-                <span><input id="op2" class="opt correct" type="radio" name="opt"> 2</span><br>
-                <span><input id="op3" class="opt wrong" type="radio" name="opt"> 3</span><br>
-                <span><input id="op4" class="opt wrong" type="radio" name="opt"> 4</span><br>
+                <span><input id="op1" onclick="wrong++;" class="opt wrong" type="radio" name="opt"> 1</span><br>
+                <span><input id="op2" onclick="correct++;" class="opt correct" type="radio" name="opt"> 2</span><br>
+                <span><input id="op3" onclick="wrong++;" class="opt wrong" type="radio" name="opt"> 3</span><br>
+                <span><input id="op4" onclick="wrong++;" class="opt wrong" type="radio" name="opt"> 4</span><br>
                 <input class="submit" id="Submit2" onclick="submittwo()" type="submit" value="Submit">
             </ul>
         </div>
         <div id="main3" class="main">
             <h2 id="ques"> What is the difference between an opening tag and a closing tag?</h2>
             <ul>
-                <span><input id="op1" class="opt wrong" type="radio" name="opt"> 
+                <span><input id="op1" class="opt wrong" type="radio" onclick="wrong++;" name="opt"> 
                     Opening tag has a / in front</span><br>
-                <span><input id="op2" class="opt correct" type="radio" name="opt"> 
+                <span><input id="op2" class="opt correct" type="radio" onclick="correct++;" name="opt"> 
                     Closing tag has a / in front</span><br>
-                <span><input id="op3" class="opt wrong" type="radio" name="opt">
+                <span><input id="op3" class="opt wrong" type="radio" onclick="wrong++;" name="opt">
                     There is no difference</span><br>
                 <input class="submit" id="Submit3"  onclick="submitthree()" type="submit" value="Submit">
             </ul>
         </div>
+
+
         <div id="result" class="result">
             <h1>Total Questions are :<span id="total"> 3</span></h1>
             <h1>Correct Question are :<span id="correct"> 00</span></h1>
             <h1>Wrong Question are :<span id="wrong"> 00</span></h1>
-            <h1>Percentage : <span id="percentage">00</span></h1>
+            <h1>Percentage : <span id="percentage"> 00</span></h1>
         </div>
     
     
