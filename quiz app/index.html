@@ -1,3 +1,198 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(4, 68, 153);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ques{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 15px;
+    display: none;    
+}
+
+#ques1{
+    display: block;
+}
+
+#ques2{
+    display: none;
+}
+
+#ques3{
+    display: none;
+}
+
+.option{
+    border: 1px solid black;
+    background-color: aliceblue;
+    font-size: larger;
+    padding: 5px;
+}
+
+.option:hover{
+    border: 1px solid black;
+    background-color: rgb(185, 185, 185);
+    font-size: larger;
+    padding: 5px;
+}
+
+.option button{
+    padding: 5px;
+    background-color: aliceblue;
+    border: none;
+    width: 80%;
+}
+
+.option button:hover{
+    padding: 5px;
+    background-color: rgb(185, 185, 185);
+    border: none;
+    width: 80%;
+}
+
+
+.submit{
+    width: 80%;
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: large;
+}
+
+.submit:hover{
+    background-color: rgb(84, 165, 138);
+}
+</style>
+
+<body>
+   <div class="container">
+    <div id="ques1" class="ques">
+        <h1>Q1) What does HTML stand for?</h1><hr><br>
+
+
+        <center>
+
+            <span class="option">
+                <button> Hyper Text Markup Language </button>
+            </span><br><br>
+
+            <span class="option">
+                <button> Hot Mail</button>   
+            </span><br><br>
+
+            <span class="option">
+                <button> How to Make Lasagna</button>
+            </span><br><br>
+
+            <span class="option">
+                <button> None of these</button>
+            </span><br><br><br><br>
+
+
+            <input id="submit1" class="submit" type="submit" onclick="submitone()" value="Next">
+        </center>
+    </div>
+    <div id="ques2" class="ques">
+        <h1>Q2) How many tags are in a regular element?</h1><hr><br>
+
+
+        <center>
+
+            <span class="option">
+                <button> 1 </button>
+            </span><br><br>
+
+            <span class="option">
+                <button> 2 </button>   
+            </span><br><br>
+
+            <span class="option">
+                <button> 3 </button>
+            </span><br><br>
+
+            <span class="option">
+                <button> 4 </button>
+            </span><br><br><br><br>
+
+
+            <input class="submit" type="submit" onclick="secondfunction()" value="Next">
+        </center>
+    </div>
+    <div id="ques3" class="ques">
+        <h1>Q3) What is the difference between an opening tag and a closing tag?</h1><hr><br>
+
+
+        <center>
+
+            <span class="option">
+                <button> Opening tag has a / in front</button>
+            </span><br><br>
+
+            <span class="option">
+                <button> Closing tag has a / in front </button>   
+            </span><br><br>
+
+            <span class="option">
+                <button> There is no difference</button>
+            </span><br><br><br><br>
+
+
+            <input class="submit" type="submit"  onclick="thirdfunction()" value="Next">
+        </center>
+    </div>
+
+   </div>
+
+   <script>
+    const ques1 = document.getElementById('ques1');
+    const ques2 = document.getElementById('ques2');
+    const ques3 = document.getElementById('ques3');
+
+    function submitone(){
+        ques2.style.Display = "block";
+        ques1.style.Display = "none";
+    }
+    function submittwo(){
+        document.getElementById("main3").style.display = "block";
+        document.getElementById("main2").style.display = "none";
+    }
+    function submitthree(){
+        document.getElementById("main3").style.display = "none";
+        document.getElementById("main1").style.display = "none";
+    }
+
+    document.getElementById(`main1`).addEventListener("click", submitone());
+    document.getElementById(`main2`).addEventListener("click", submittwo());
+    document.getElementById(`main3`).addEventListener("click", submitthree());
+   </script>
+</body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,31 +208,31 @@
     <div class="container">
         <div id="main1" class="main">
             <h2 id="ques"> What does HTML stand for?</h2>
-                <span><input id="op1" onclick="correct++;" class="opt correct" type="radio" name="opt"> Hyper Text Markup Language</span><br>
-                <span><input id="op2 wrong" onclick="wrong++;" class="opt" type="radio" name="opt"> Hot Mail</span><br>
-                <span><input id="op3 wrong" onclick="wrong++;" class="opt" type="radio" name="opt"> How to Make Lasagna</span><br>
-                <span><input id="op4 wrong" onclick="wrong++;" class="opt" type="radio" name="opt"> None of these</span><br>
+                <span><input id="op1" onclick="correct= correct + 1;" class="opt correct" type="radio" name="opt"> Hyper Text Markup Language</span><br>
+                <span><input id="op2 wrong" onclick="wrong = wrong + 1;" class="opt" type="radio" name="opt"> Hot Mail</span><br>
+                <span><input id="op3 wrong" onclick="wrong = wrong + 1;" class="opt" type="radio" name="opt"> How to Make Lasagna</span><br>
+                <span><input id="op4 wrong" onclick="wrong = wrong + 1;" class="opt" type="radio" name="opt"> None of these</span><br>
                 <input class="submit" id="Submit1" onclick="submitone()" type="submit" value="Submit">
         </div>
         <div id="main2" class="main">
             <h2 id="ques"> 
                 How many tags are in a regular element?</h2>
             <ul>
-                <span><input id="op1" onclick="wrong++;" class="opt wrong" type="radio" name="opt"> 1</span><br>
-                <span><input id="op2" onclick="correct++;" class="opt correct" type="radio" name="opt"> 2</span><br>
-                <span><input id="op3" onclick="wrong++;" class="opt wrong" type="radio" name="opt"> 3</span><br>
-                <span><input id="op4" onclick="wrong++;" class="opt wrong" type="radio" name="opt"> 4</span><br>
+                <span><input id="op1" onclick="wrong = wrong + 1;" class="opt wrong" type="radio" name="opt"> 1</span><br>
+                <span><input id="op2" onclick="correct= correct + 1;" class="opt correct" type="radio" name="opt"> 2</span><br>
+                <span><input id="op3" onclick="wrong = wrong + 1;" class="opt wrong" type="radio" name="opt"> 3</span><br>
+                <span><input id="op4" onclick="wrong = wrong + 1;" class="opt wrong" type="radio" name="opt"> 4</span><br>
                 <input class="submit" id="Submit2" onclick="submittwo()" type="submit" value="Submit">
             </ul>
         </div>
         <div id="main3" class="main">
             <h2 id="ques"> What is the difference between an opening tag and a closing tag?</h2>
             <ul>
-                <span><input id="op1" class="opt wrong" type="radio" onclick="wrong++;" name="opt"> 
+                <span><input id="op1" class="opt wrong" type="radio" onclick="wrong = wrong + 1;" name="opt"> 
                     Opening tag has a / in front</span><br>
-                <span><input id="op2" class="opt correct" type="radio" onclick="correct++;" name="opt"> 
+                <span><input id="op2" class="opt correct" type="radio" onclick="correct= correct + 1;" name="opt"> 
                     Closing tag has a / in front</span><br>
-                <span><input id="op3" class="opt wrong" type="radio" onclick="wrong++;" name="opt">
+                <span><input id="op3" class="opt wrong" type="radio" onclick="wrong = wrong + 1;" name="opt">
                     There is no difference</span><br>
                 <input class="submit" id="Submit3"  onclick="submitthree()" type="submit" value="Submit">
             </ul>
