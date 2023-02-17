@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(72, 72, 72);
+}
+
+.nav-1{
+    border-bottom: 1px solid blue;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.home-1{
+    margin-left: 500px;
+}
