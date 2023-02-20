@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(8, 210, 255);
+}
+
+.nav-1{
+    box-shadow: 0 2px 5px rgba(0,0,0, 1);
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.home-1{
+    margin-left: 500px;
+}
+
+.links-1{
+    margin: 0 10px;
+}
