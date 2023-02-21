@@ -176,6 +176,23 @@ document.write(`<br />${fifo[0]} ${fifo[1]}`)
 var lifo = ["lifo" , "(last in first out)"]
 document.write(`<br />${lifo[0]} ${lifo[1]}`)
 
+var mobilenamefordroptdown = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"]
+document.write(`<br />
+<select>
+<option>${mobilenamefordroptdown[0]}</option>
+<option>${mobilenamefordroptdown[1]}</option>
+<option>${mobilenamefordroptdown[2]}</option>
+<option>${mobilenamefordroptdown[3]}</option>
+<option>${mobilenamefordroptdown[4]}</option>
+<option>${mobilenamefordroptdown[5]}</option>
+</select>
+<br />
+`)
 
-
+var multidimentional0 = [0, 1, 2, 3, "<br />"]
+document.write(multidimentional0)
+var multidimentional1 = [1, 0, 1, 2, "<br />"]
+document.write(multidimentional1)
+var multidimentional2 = [2, 1, 0, 1, "<br />"]
+document.write(multidimentional2)
 
