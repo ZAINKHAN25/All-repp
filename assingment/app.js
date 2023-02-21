@@ -170,6 +170,11 @@ document.write("<br />" + arr);
 var str = ["This is my cat"]
 document.write("<br />" + str);
 
+var fifo = ["fifo" , "(firt in first out)"]
+document.write(`<br />${fifo[0]} ${fifo[1]}`)
+
+var lifo = ["lifo" , "(last in first out)"]
+document.write(`<br />${lifo[0]} ${lifo[1]}`)
 
 
 
