@@ -2,43 +2,67 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body{
-    background-color: royalblue;
-}
-
-.container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.question{
-    width: max-content;
-    height: max-content;
-    padding: 15px;
-    background-color: rgb(78, 204, 139);
-    display: none;
-    border-radius: 15px;
     color: white;
 }
 
-#question1{
-    display: block;
+.body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2C2D2D;
 }
 
-#question2{
-    display: block;
+h1{
+    color: white !important;
+    font-size: 300% !important;
+    padding-top: 8% !important;
 }
 
-#question3{
-    display: block;
+.center{
+    text-align: center !important;
 }
 
-#question4{
-    display: block;
+.btnarea{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+.btn{
+    min-width: 30%;
+    max-width: 70%;
+    margin: 10px 0;
+    color: white !important;
+    background-color: #55D209 !important;
+    border-radius: 19px;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+}
+
+.authernamezainkhan25{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+}
+
+.totalpercen{
+    width: 100vw;
+    display: felx;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly !important;
+}
+
+.mtop-1{
+    margin-top: 100px;
+}
+
+.div1, .div2, .div3{
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-around !important;
 }

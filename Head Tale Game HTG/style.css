@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: rgb(8, 8, 8);
+    padding:5vw 5vw 5vw 5vw;
+    height:100vh;
+    overflow-y:hidden;
+}
+
+.main{
+    display: flex;
+    width: 30vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:35%;
+    /* margin-right: 15%; */
+}
+
+#gamenoone{
+    background-color: #763558;
+    color: white;
+    padding: 5px;
+    font-size: 30px;
+    text-align:center;
+    position: fixed;
+    top: 10px;
+    width: 80%;
+}
+
+#guessing{
+    height: 10vh;
+    background-color: white;
+    /* color: black; */
+    padding-left: 15px;
+    padding-top: 15px;
+    text-align:center;
+    position: fixed;
+    color: rgb(0, 0, 0);
+    top: 80px;
+}
+#chanceagain{
+    width: 80%;
+height: 10vh;
+background-color: white;
+color: rgb(0, 0, 0);
+padding-left: 15px;
+padding-top: 15px;
+position: fixed;
+top: 115px;
+text-align:center;
+}
+
+#number{
+    width: 80%;
+    height: 20%;
+    font-size: 38px;
+    padding:2px 0px 2px 10px; 
+}
+
+#button{
+    background-color: #f8fa0b;
+    padding: 10px;
+    width: 25vw;
+    bottom: 1px solid white;
+    color: black;
+    border-radius: 35px;
+    font-weight: bold;
+    border:none;
+    margin-bottom: 5%;
+    font-size:20px;
+}
+
+#button:hover{
+    background-color: #a3a608;
+}
+#low, #high, #good{
+    display: none;
+}
+
+.div-1{
+    background-color: #0eb0b2;
+    top: 5px;
+    width: 80vw;
+    text-align:center;
+    height:65%;
+
+}
+
+#guesthenumber{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    margin-bottom:5%;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+#number{
+    margin-bottom:5%;
+    width:60%;
+    box-shadow: 2px 2px 2px 2px #000000;
+    height:60px;
+}
+
+#currentchances-1 ,#yourscore-1 ,#highscore-1{
+    color:white;
+    font-size: 20px;
+    margin-bottom:13px;
+}
